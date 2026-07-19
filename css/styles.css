@@ -369,10 +369,10 @@ h1, h2, h3, h4 {
 }
 .mob-close:hover { color: var(--white); }
 .mob-logo {
-    height: 110px;
+    height: 140px;
     width: auto;
     display: block;
-    margin: 0 auto 18px;
+    margin: 0 auto 22px;
 }
 .mob-header {
     text-align: center;
@@ -814,11 +814,184 @@ h1, h2, h3, h4 {
     background: var(--light);
     padding: 72px 0;
 }
+.contact-sec--full {
+    background: var(--white);
+    padding: 80px 0;
+}
 .contact-inner {
     display: grid;
     grid-template-columns: 1.1fr 0.9fr;
     gap: 72px;
     align-items: start;
+}
+
+/* ── CONTACT INFO COLUMN (full page version) ─────────────── */
+.contact-info-col--full { gap: 0; }
+
+.cic-block {
+    padding: 32px 0;
+    border-bottom: 1px solid var(--border);
+}
+.cic-block:first-child { padding-top: 0; }
+.cic-block:last-child { border-bottom: none; padding-bottom: 0; }
+
+.cic-block h3 {
+    font-size: 13px;
+    font-weight: 900;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--dark);
+    margin-bottom: 16px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--red);
+    display: inline-block;
+}
+.cic-block p {
+    font-size: 14px;
+    line-height: 1.85;
+    color: var(--gray);
+    margin-bottom: 16px;
+}
+.cic-block p:last-child { margin-bottom: 0; }
+
+.cic-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 4px;
+}
+.cic-list li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--dark);
+    line-height: 1.4;
+}
+.cic-list li svg { flex-shrink: 0; color: var(--red); }
+
+.cic-contact-items {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.cic-contact-item {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+.cic-contact-icon {
+    width: 42px;
+    height: 42px;
+    background: var(--red);
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    flex-shrink: 0;
+}
+.cic-contact-item strong {
+    display: block;
+    font-size: 10px;
+    font-weight: 900;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--gray);
+    margin-bottom: 2px;
+}
+.cic-contact-item a,
+.cic-contact-item span {
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--dark);
+    transition: color .2s;
+}
+.cic-contact-item a:hover { color: var(--red); }
+
+.cic-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--red);
+    margin-top: 12px;
+    transition: gap .2s;
+}
+.cic-link:hover { gap: 10px; }
+
+/* Hours table */
+.hours-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 14px;
+}
+.hours-table td {
+    padding: 8px 0;
+    font-size: 13px;
+    color: var(--dark);
+    border-bottom: 1px solid var(--border);
+    font-weight: 600;
+}
+.hours-table td:last-child {
+    text-align: right;
+    color: var(--gray);
+    font-weight: 500;
+}
+.hours-closed td { color: var(--gray); opacity: .6; }
+.hours-note {
+    font-size: 12px;
+    color: var(--gray);
+    font-style: italic;
+    line-height: 1.6;
+}
+
+/* Process steps inside contact page */
+.process-steps {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 4px;
+}
+.process-step {
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+}
+.process-step .process-num {
+    width: 36px;
+    height: 36px;
+    min-width: 36px;
+    font-size: 14px;
+}
+.process-step-text strong {
+    display: block;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--dark);
+    margin-bottom: 4px;
+}
+.process-step-text p {
+    font-size: 13px;
+    line-height: 1.75;
+    color: var(--gray);
+    margin-bottom: 0;
+}
+
+/* Form disclaimer note */
+.form-note {
+    font-size: 11px;
+    color: var(--gray);
+    margin-top: 12px;
+    line-height: 1.6;
+    opacity: .75;
 }
 .contact-sec .sec-h2 { margin-bottom: 32px; }
 .form-row {
@@ -1998,8 +2171,10 @@ h1, h2, h3, h4 {
 .page-hero-inner {
     position: relative;
     z-index: 1;
-    padding: 80px 0 64px;
+    padding-top: 80px;
+    padding-bottom: 64px;
 }
+.page-hero-inner h1 { color: var(--white); }
 .page-hero-h1 {
     font-size: clamp(32px, 5.5vw, 68px);
     font-weight: 900;
@@ -2934,11 +3109,11 @@ h1, h2, h3, h4 {
 }
 @media (max-width: 900px) {
     :root { --nav-h: 72px; }
-    .nav-logo img { width: 220px; }
+    .nav-logo img { width: auto; height: 52px; max-width: none; }
 }
 @media (max-width: 600px) {
     :root { --nav-h: 60px; }
-    .nav-logo img { width: 180px; }
+    .nav-logo img { height: 46px; }
 }
 
 /* ═══════════════════════════════════════════════════════════
@@ -3320,6 +3495,199 @@ h1, h2, h3, h4 {
 /* ── HOME SVC CARD — body text stays bright on hover ────── */
 .home-svc-card:hover .home-svc-body h3 {
     letter-spacing: 0.14em;
+}
+
+/* ══ CONTACT PAGE — MOBILE RESPONSIVE ══════════════════════ */
+@media (max-width: 900px) {
+    .contact-sec--full .contact-inner { grid-template-columns: 1fr; gap: 48px; }
+}
+@media (max-width: 600px) {
+    .contact-sec--full { padding: 52px 0; }
+    .cic-block { padding: 24px 0; }
+    .cic-contact-icon { width: 36px; height: 36px; min-width: 36px; }
+    .cic-contact-item a, .cic-contact-item span { font-size: 14px; }
+    .hours-table td { padding: 6px 0; font-size: 12px; }
+    .process-step .process-num { width: 30px; height: 30px; min-width: 30px; font-size: 12px; }
+}
+
+/* ══ DECORATIVE ROOFING ANIMATIONS & DETAILS ════════════════
+   Scrumptious micro-details that make the site feel premium
+══════════════════════════════════════════════════════════════ */
+
+/* ── Animated shingle-wave background on dark sections ───── */
+@keyframes shingleDrift {
+    0%   { background-position: 0 0, 0 0; }
+    100% { background-position: 60px 60px, 60px 60px; }
+}
+.comforts-sec::before,
+.stats-bar::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    z-index: 0;
+    background-image:
+        repeating-linear-gradient(-55deg,
+            transparent 0px, transparent 28px,
+            rgba(255,255,255,.018) 28px, rgba(255,255,255,.018) 29px),
+        repeating-linear-gradient(55deg,
+            transparent 0px, transparent 28px,
+            rgba(255,255,255,.018) 28px, rgba(255,255,255,.018) 29px);
+    animation: shingleDrift 8s linear infinite;
+}
+
+/* ── Rooftop silhouette divider above CTA banner ─────────── */
+@keyframes rooflineFloat {
+    0%, 100% { transform: translateY(0); }
+    50%       { transform: translateY(-4px); }
+}
+.cta-banner::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: 0;
+    right: 0;
+    height: 32px;
+    pointer-events: none;
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 32' preserveAspectRatio='none'%3E%3Cpath d='M0 32 L180 4 L360 20 L540 2 L720 18 L900 2 L1080 20 L1260 4 L1440 32 Z' fill='rgba(207%2C33%2C49%2C0.25)'/%3E%3C/svg%3E") no-repeat top center / 100% 100%;
+}
+
+/* ── Section heading red underline accent ─────────────────── */
+.sec-h2.accent-line {
+    position: relative;
+    padding-bottom: 18px;
+}
+.sec-h2.accent-line::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 48px;
+    height: 3px;
+    background: var(--red);
+    border-radius: 2px;
+}
+.sec-h2.accent-line.center::after {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* ── Animated gold shimmer on hero eyebrow ───────────────── */
+@keyframes eyebrowShimmer {
+    0%   { background-position: -200% center; }
+    100% { background-position: 200% center; }
+}
+.hs-eyebrow {
+    background: linear-gradient(90deg,
+        rgba(207,190,156,.7) 0%,
+        rgba(255,255,255,1) 40%,
+        rgba(207,190,156,.7) 60%,
+        rgba(255,255,255,.6) 100%);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: eyebrowShimmer 3.5s linear infinite;
+}
+
+/* ── Service card — red glow on hover ────────────────────── */
+.home-svc-card {
+    transition: transform 0.55s cubic-bezier(.22,1,.36,1),
+                box-shadow 0.55s cubic-bezier(.22,1,.36,1);
+}
+.home-svc-card:hover {
+    box-shadow: 0 20px 60px rgba(207,33,49,.22), 0 4px 16px rgba(0,0,0,.18);
+}
+
+/* ── Offer card pulse border on hover ────────────────────── */
+@keyframes borderPulse {
+    0%, 100% { box-shadow: 0 0 0 0 rgba(207,33,49,0); }
+    50%       { box-shadow: 0 0 0 4px rgba(207,33,49,.18); }
+}
+.offer-card:hover {
+    animation: borderPulse 1.2s ease-in-out infinite;
+}
+
+/* ── Roof nail dot decoration on process numbers ─────────── */
+.process-num {
+    position: relative;
+}
+.process-num::after {
+    content: '';
+    position: absolute;
+    top: -4px;
+    right: -4px;
+    width: 8px;
+    height: 8px;
+    background: var(--gold);
+    border-radius: 50%;
+    border: 2px solid var(--white);
+}
+
+/* ── Gold accent bar on section eyebrows ─────────────────── */
+.eyebrow::before {
+    content: '';
+    display: inline-block;
+    width: 18px;
+    height: 2px;
+    background: currentColor;
+    vertical-align: middle;
+    margin-right: 10px;
+    opacity: .6;
+}
+
+/* ── Subtle page section separator lines ─────────────────── */
+.sec + .sec,
+.sec-sm + .sec,
+.sec + .sec-sm {
+    border-top: 1px solid var(--border);
+}
+
+/* ── Nav logo hover lift ─────────────────────────────────── */
+.nav-logo img {
+    transition: opacity .2s, transform .25s cubic-bezier(.22,1,.36,1);
+}
+.nav-logo:hover img {
+    opacity: .88;
+    transform: translateY(-1px);
+}
+
+/* ── Footer brand letter-spacing on hover ────────────────── */
+.footer-logo { transition: opacity .25s, transform .25s; }
+.footer-logo:hover { opacity: .85; transform: scale(1.03); }
+
+/* ── Animated red left border on FAQ open ────────────────── */
+@keyframes faqBorderIn {
+    from { height: 0; }
+    to   { height: 100%; }
+}
+.faq-item.open {
+    border-left: 3px solid var(--red);
+    position: relative;
+}
+
+/* ── Gallery overlay slides up on hover ──────────────────── */
+.gallery-overlay {
+    transition: opacity .3s, transform .35s cubic-bezier(.22,1,.36,1);
+    transform: translateY(6px);
+    opacity: 0;
+}
+.gallery-item:hover .gallery-overlay {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ── Rooftop pattern watermark on hero right half ─────────── */
+.hs::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    right: 0;
+    height: 56px;
+    pointer-events: none;
+    z-index: 3;
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 56' preserveAspectRatio='none'%3E%3Cpolyline points='0%2C56 160%2C10 320%2C42 480%2C6 640%2C38 800%2C6 960%2C38 1120%2C10 1280%2C38 1440%2C56' fill='none' stroke='rgba(207%2C33%2C49%2C.4)' stroke-width='2.5' stroke-linejoin='round'/%3E%3Cpolyline points='0%2C56 160%2C10 320%2C42 480%2C6 640%2C38 800%2C6 960%2C38 1120%2C10 1280%2C38 1440%2C56' fill='none' stroke='rgba(207%2C190%2C156%2C.18)' stroke-width='1' stroke-dasharray='8 6' stroke-linejoin='round'/%3E%3C/svg%3E") no-repeat bottom center / 100% 100%;
 }
 
 /* ── ROOFLINE SVG DIVIDER ────────────────────────────────── */
