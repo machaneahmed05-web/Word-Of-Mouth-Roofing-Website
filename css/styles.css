@@ -3108,12 +3108,12 @@ h1, h2, h3, h4 {
     .hs-card-title { font-size: 17px; }
 }
 @media (max-width: 900px) {
-    :root { --nav-h: 90px; }
-    .nav-logo img { width: auto; height: 72px; max-width: none; }
+    :root { --nav-h: 130px; }
+    .nav-logo img { width: auto; height: 108px; max-width: none; }
 }
 @media (max-width: 600px) {
-    :root { --nav-h: 84px; }
-    .nav-logo img { height: 66px; }
+    :root { --nav-h: 120px; }
+    .nav-logo img { height: 100px; }
 }
 
 /* ═══════════════════════════════════════════════════════════
