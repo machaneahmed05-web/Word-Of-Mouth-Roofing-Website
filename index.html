@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Word of Mouth Roofing | San Antonio's Premier Roofing Contractor</title>
+<meta name="description" content="Word of Mouth Roofing is San Antonio's trusted, family-owned roofing contractor. Roof replacement, repair, installation, gutters, siding &amp; more. Free estimates.">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- ══ HEADER ══════════════════════════════════════════════ -->
+<header class="site-header" id="siteHeader">
+  <div class="top-bar">
+    <div class="container top-bar-inner">
+      <div class="tb-left">
+        <a href="tel:+12102060779" class="tb-phone">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+          (210) 206-0779
+        </a>
+        <div class="tb-divider"></div>
+        <a href="mailto:info@wordofmouthroofing.com" class="tb-email">info@wordofmouthroofing.com</a>
+      </div>
+      <div class="tb-right">
+        <div class="tb-socials">
+          <a href="#" class="tb-soc" aria-label="Facebook">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+          </a>
+          <a href="#" class="tb-soc" aria-label="Instagram">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <nav class="main-nav">
+    <div class="container nav-inner">
+      <a href="index.html" class="nav-logo">
+        <img src="assets/logo-nav.png" alt="Word of Mouth Roofing">
+      </a>
+      <div class="nav-links">
+        <div class="nav-dd">
+          <span class="nav-link nav-dd-toggle">
+            Services
+            <svg class="chevron" width="11" height="7" viewBox="0 0 11 7" fill="none"><path d="M1 1l4.5 4.5L10 1" stroke="currentColor" stroke-width="1.8"/></svg>
+          </span>
+          <div class="nav-dd-menu">
+            <a href="services/roof-replacement.html">Roof Replacement</a>
+            <a href="services/roof-installation.html">Roof Installation</a>
+            <a href="services/roof-repair.html">Roof Repair</a>
+            <a href="services/roof-maintenance.html">Roof Maintenance</a>
+            <a href="services/roof-inspection.html">Roof Inspection</a>
+            <a href="services/siding.html">Siding</a>
+            <a href="services/painting.html">Exterior Painting</a>
+            <a href="services/gutters-downspouts.html">Gutters &amp; Downspouts</a>
+          </div>
+        </div>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="blog.html" class="nav-link">Blog</a>
+        <a href="specials.html" class="nav-link">Specials</a>
+        <a href="locations.html" class="nav-link">Locations</a>
+        <a href="contact.html" class="nav-link nav-cta-btn">Get A Free Estimate</a>
+      </div>
+      <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav-progress" id="navProgress"></div>
+  </nav>
+</header>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+  <button class="mob-close" id="mobileClose" aria-label="Close menu">✕</button>
+  <div class="mob-header">
+    <img src="assets/logo-white.png" class="mob-logo" alt="Word of Mouth Roofing">
+    <a href="tel:+12102060779" class="mob-phone-link">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+      (210) 206-0779
+    </a>
+  </div>
+  <a href="index.html" class="mob-link">Home</a>
+  <a href="#" class="mob-link" id="mobServicesToggle">Services <span>▾</span></a>
+  <div class="mob-sub" id="mobServicesSub">
+    <a href="services/roof-replacement.html">Roof Replacement</a>
+    <a href="services/roof-installation.html">Roof Installation</a>
+    <a href="services/roof-repair.html">Roof Repair</a>
+    <a href="services/roof-maintenance.html">Roof Maintenance</a>
+    <a href="services/roof-inspection.html">Roof Inspection</a>
+    <a href="services/siding.html">Siding</a>
+    <a href="services/painting.html">Exterior Painting</a>
+    <a href="services/gutters-downspouts.html">Gutters &amp; Downspouts</a>
+  </div>
+  <a href="about.html" class="mob-link">About</a>
+  <a href="blog.html" class="mob-link">Blog</a>
+  <a href="specials.html" class="mob-link">Specials</a>
+  <a href="locations.html" class="mob-link">Locations</a>
+  <div class="mob-cta-wrap">
+    <a href="contact.html" class="mob-cta">Get A Free Estimate</a>
+  </div>
+</div>
+
+<!-- ══ HERO ═════════════════════════════════════════════════ -->
+<section class="hs">
+  <!-- Full-bleed video background -->
+  <div class="hs-video-wrap">
+    <video autoplay muted loop playsinline preload="none">
+      <source src="assets/homes-video.mp4" type="video/mp4">
+    </video>
+  </div>
+  <!-- Gradient overlay: pitch dark left → transparent right -->
+  <div class="hs-overlay"></div>
+  <!-- Red left stripe accent -->
+  <div class="hs-stripe"></div>
+
+  <div class="container hs-inner">
+    <!-- Left: Text -->
+    <div class="hs-left">
+      <img src="assets/logo-white.png" alt="Word of Mouth Roofing" class="hs-logo">
+      <span class="hs-eyebrow">Roofing Repair &amp; Replacement Services</span>
+      <h1 class="hs-h1">Family Owned.<br>Locally<br>Operated.</h1>
+      <p class="hs-body">Whether you need a brand-new roof or just a repair, Word of Mouth Roofing delivers the quality and honesty San Antonio homeowners deserve — on time and on budget.</p>
+      <div class="hs-trust">
+        <div class="hs-trust-item">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2.2"><polyline points="20 6 9 17 4 12"/></svg>
+          <span>FREE Estimates &amp; Inspections</span>
+        </div>
+        <div class="hs-trust-item">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2.2"><polyline points="20 6 9 17 4 12"/></svg>
+          <span>$2,000 On-Time Guarantee</span>
+        </div>
+        <div class="hs-trust-item">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2.2"><polyline points="20 6 9 17 4 12"/></svg>
+          <span>40+ Years Combined Experience</span>
+        </div>
+      </div>
+      <div class="hs-badges">
+        <img src="Certified-Contractor.png" alt="GAF Certified Residential Roofing Contractor" class="hs-badge">
+        <img src="Better-Business-Bureau-Symbol.png" alt="BBB Accredited Business" class="hs-badge hs-badge--wide">
+        <img src="NRCA_logo-300x300-1-300x300.avif" alt="NRCA National Roofing Contractors Association" class="hs-badge">
+      </div>
+    </div>
+
+    <!-- Right: Form card -->
+    <div class="hs-right">
+      <div class="hs-card" id="heroCard">
+        <h3 class="hs-card-title">Let Our Team Earn<br>Your Trust</h3>
+        <div class="hs-card-offer">
+          <span>Summer Special</span>
+          <strong>10% OFF Full Roof Shingle Upgrade</strong>
+        </div>
+        <form class="hs-form" id="heroForm" novalidate>
+          <div class="hs-form-row">
+            <div class="hs-fg">
+              <label>First Name</label>
+              <input type="text" name="fname" placeholder="First Name" required>
+            </div>
+            <div class="hs-fg">
+              <label>Last Name</label>
+              <input type="text" name="lname" placeholder="Last Name" required>
+            </div>
+          </div>
+          <div class="hs-form-row">
+            <div class="hs-fg">
+              <label>Phone Number</label>
+              <input type="tel" name="phone" placeholder="(210) 555-0000" required>
+            </div>
+            <div class="hs-fg">
+              <label>ZIP Code</label>
+              <input type="text" name="zip" placeholder="78201">
+            </div>
+          </div>
+          <div class="hs-fg">
+            <label>Choose a Service</label>
+            <select name="service">
+              <option value="">Choose a Service</option>
+              <option>Roof Replacement</option>
+              <option>Roof Repair</option>
+              <option>Roof Installation</option>
+              <option>Roof Maintenance</option>
+              <option>Roof Inspection</option>
+              <option>Siding</option>
+              <option>Exterior Painting</option>
+              <option>Gutters &amp; Downspouts</option>
+              <option>Other / Not Sure</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn-red hs-submit">Get A Free Estimate &rarr;</button>
+          <p class="hs-disclaimer">By submitting you agree to receive communications from Word of Mouth Roofing. We never share your information.</p>
+        </form>
+        <div class="hs-emergency">24 HR EMERGENCY SERVICE</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ SUMMER SPECIALS STRIP ════════════════════════════════ -->
+<section class="ss-strip">
+  <div class="container ss-strip-grid">
+    <div class="ss-strip-item">
+      <span class="ss-strip-tag">Limited Time</span>
+      <h3>10% OFF Full Premium Roof Shingle Upgrade</h3>
+      <p>Save $1,500–$2,500+ on your next full roof replacement. Our biggest discount of the year on our top-tier shingle line. Cannot be combined with other offers.</p>
+      <a href="specials.html" class="ss-strip-link">Learn More →</a>
+    </div>
+    <div class="ss-strip-divider"></div>
+    <div class="ss-strip-item">
+      <span class="ss-strip-tag">Exclusive Bundle</span>
+      <h3>FREE Exterior Repaint With Any Full Roof Replacement</h3>
+      <p>A $3,000–$8,000 value, completely free. Book your full roof replacement and we'll repaint your entire exterior at no extra charge.</p>
+      <a href="specials.html" class="ss-strip-link">Learn More →</a>
+    </div>
+    <div class="ss-strip-divider"></div>
+    <div class="ss-strip-item">
+      <span class="ss-strip-tag">Our Guarantee</span>
+      <h3>$2,000 On-Time, On-Budget Guarantee</h3>
+      <p>If we don't finish on the agreed timeline and within the agreed budget, we pay YOU $2,000. In writing. No exceptions. That's the Word of Mouth standard.</p>
+      <a href="specials.html" class="ss-strip-link">Learn More →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ══ INTRO TEXT ════════════════════════════════════════════ -->
+<section class="intro-bar">
+  <div class="container">
+    <p>Word of Mouth Roofing is a premier, family-owned roofing company proudly serving San Antonio and surrounding communities. Founded by Denver Blanscett and Johnny Garza — two roofing veterans with over 40 years of combined experience — our mission is simple: deliver the quality roof your home deserves, on time and on budget, every single time. We specialize in residential roof replacement, repair, installation, maintenance, roof inspections, siding, gutters, and exterior painting.</p>
+    <div id="introExtra" class="intro-extra">
+      <p style="margin-top:14px">Before launching Word of Mouth Roofing, Denver served as Vice President at one of the nation's leading roofing design firms, overseeing thousands of projects across the country. Johnny brings two decades of hands-on field expertise, from complex roof replacements to full-scale exterior renovations. Together, they built this company on a straightforward principle: treat every homeowner the way you'd want your own family treated.</p>
+      <p style="margin-top:14px">In just two years, Word of Mouth Roofing has earned a reputation as one of San Antonio's most trusted roofing contractors — not through advertising, but through exceptional craftsmanship and genuine care for every client. When your neighbors recommend us, that's the highest honor we can receive.</p>
+    </div>
+    <button class="read-more-toggle" data-target="introExtra">Read More →</button>
+  </div>
+</section>
+
+<!-- ══ AWARD / RECOGNITION SECTION ══════════════════════════ -->
+<section class="award-sec">
+  <div class="container">
+    <div class="award-grid">
+      <div class="award-text" data-reveal>
+        <span class="eyebrow">Recognized Excellence in Roofing</span>
+        <h2 class="sec-h2">Residential Roofing<br>Contractor of the Year</h2>
+        <p>Word of Mouth Roofing has been recognized as one of San Antonio's top residential roofing contractors. Our certifications and awards aren't just plaques on a wall — they represent thousands of completed projects, satisfied homeowners, and a relentless commitment to quality workmanship.</p>
+        <p>We hold premier contractor status with GAF and Owens Corning, are accredited A+ with the Better Business Bureau, and are fully licensed and insured in the state of Texas. When you choose Word of Mouth Roofing, you're choosing a team that has earned your trust.</p>
+        <a href="about.html" class="btn btn-red" style="margin-top:8px">Learn More About Us</a>
+      </div>
+      <div class="award-badge-col" data-reveal>
+        <div class="award-circle">
+          <span class="ac-year">2024</span>
+          <span class="ac-main">Residential<br>Roofing<br>Contractor<br>of the Year</span>
+          <span class="ac-sub">San Antonio, TX</span>
+        </div>
+        <div class="award-circle" style="background:var(--dark);width:120px;height:120px">
+          <span class="ac-year" style="color:rgba(255,255,255,.6)">GAF</span>
+          <span class="ac-main" style="font-size:10px">Certified<br>Contractor</span>
+          <span class="ac-sub">Master Elite</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ FAQ SECTION ═══════════════════════════════════════════ -->
+<section class="faq-sec">
+  <div class="container">
+    <span class="eyebrow" style="text-align:center;display:block">Common Questions</span>
+    <h2 class="sec-h2 center">Frequently Asked Questions</h2>
+    <div class="faq-grid">
+
+      <div class="faq-item" data-reveal>
+        <button class="faq-q" aria-expanded="false">
+          How long does a roof replacement take?
+          <span class="faq-icon"><svg width="10" height="10" viewBox="0 0 10 10" fill="currentColor"><path d="M5 0v10M0 5h10"/></svg></span>
+        </button>
+        <div class="faq-body"><div class="faq-body-inner"><div class="faq-body-content">
+          Most residential roof replacements in San Antonio are completed in 1–2 days, depending on the size and complexity of your roof. Our crews work efficiently to minimize disruption to your daily life while never cutting corners on quality. We'll give you a clear timeline before we begin.
+        </div></div></div>
+      </div>
+
+      <div class="faq-item" data-reveal data-delay="1">
+        <button class="faq-q" aria-expanded="false">
+          Does homeowners insurance cover roof replacement?
+          <span class="faq-icon"><svg width="10" height="10" viewBox="0 0 10 10" fill="currentColor"><path d="M5 0v10M0 5h10"/></svg></span>
+        </button>
+        <div class="faq-body"><div class="faq-body-inner"><div class="faq-body-content">
+          If your roof was damaged by a covered peril — such as hail, wind, or storm damage — your homeowners insurance will typically cover the cost of replacement. Word of Mouth Roofing works directly with all major insurance carriers and will guide you through every step of the claims process at no additional charge.
+        </div></div></div>
+      </div>
+
+      <div class="faq-item" data-reveal>
+        <button class="faq-q" aria-expanded="false">
+          How do I know if I need a repair or a full replacement?
+          <span class="faq-icon"><svg width="10" height="10" viewBox="0 0 10 10" fill="currentColor"><path d="M5 0v10M0 5h10"/></svg></span>
+        </button>
+        <div class="faq-body"><div class="faq-body-inner"><div class="faq-body-content">
+          This depends on the age of your roof, the extent of the damage, and your long-term plans for the home. Generally, if your roof is over 15–20 years old or if damage covers more than 30% of the surface, replacement is the more cost-effective option. Our free inspection will give you an honest, no-pressure recommendation.
+        </div></div></div>
+      </div>
+
+      <div class="faq-item" data-reveal data-delay="1">
+        <button class="faq-q" aria-expanded="false">
+          What roofing materials do you work with?
+          <span class="faq-icon"><svg width="10" height="10" viewBox="0 0 10 10" fill="currentColor"><path d="M5 0v10M0 5h10"/></svg></span>
+        </button>
+        <div class="faq-body"><div class="faq-body-inner"><div class="faq-body-content">
+          We work with all major roofing materials, including architectural asphalt shingles, premium impact-resistant shingles, metal roofing, and flat/low-slope systems. As a GAF and Owens Corning preferred contractor, we have access to the industry's best products backed by manufacturer warranties.
+        </div></div></div>
+      </div>
+
+      <div class="faq-item" data-reveal>
+        <button class="faq-q" aria-expanded="false">
+          Do you offer financing options?
+          <span class="faq-icon"><svg width="10" height="10" viewBox="0 0 10 10" fill="currentColor"><path d="M5 0v10M0 5h10"/></svg></span>
+        </button>
+        <div class="faq-body"><div class="faq-body-inner"><div class="faq-body-content">
+          Yes. We understand a new roof is a significant investment, which is why we offer flexible financing options to help spread the cost over time. Ask about our current financing programs during your free estimate and we'll find a plan that works for your budget.
+        </div></div></div>
+      </div>
+
+      <div class="faq-item" data-reveal data-delay="1">
+        <button class="faq-q" aria-expanded="false">
+          Is Word of Mouth Roofing licensed and insured?
+          <span class="faq-icon"><svg width="10" height="10" viewBox="0 0 10 10" fill="currentColor"><path d="M5 0v10M0 5h10"/></svg></span>
+        </button>
+        <div class="faq-body"><div class="faq-body-inner"><div class="faq-body-content">
+          Absolutely. Word of Mouth Roofing is fully licensed in the state of Texas and carries comprehensive general liability insurance and workers' compensation coverage. You should never hire a roofing contractor who can't verify this — and we're happy to provide proof of our credentials before any project begins.
+        </div></div></div>
+      </div>
+
+      <div class="faq-item" data-reveal>
+        <button class="faq-q" aria-expanded="false">
+          What warranty do you offer on your work?
+          <span class="faq-icon"><svg width="10" height="10" viewBox="0 0 10 10" fill="currentColor"><path d="M5 0v10M0 5h10"/></svg></span>
+        </button>
+        <div class="faq-body"><div class="faq-body-inner"><div class="faq-body-content">
+          We stand behind every project with a comprehensive workmanship warranty in addition to the manufacturer's product warranty. Depending on the materials used, your new roof may be covered by manufacturer warranties of up to 50 years. We'll walk you through all warranty details before your project begins.
+        </div></div></div>
+      </div>
+
+      <div class="faq-item" data-reveal data-delay="1">
+        <button class="faq-q" aria-expanded="false">
+          How do I get started with Word of Mouth Roofing?
+          <span class="faq-icon"><svg width="10" height="10" viewBox="0 0 10 10" fill="currentColor"><path d="M5 0v10M0 5h10"/></svg></span>
+        </button>
+        <div class="faq-body"><div class="faq-body-inner"><div class="faq-body-content">
+          Simply call us at (210) 206-0779 or fill out our online contact form to schedule your free, no-obligation roof inspection and estimate. One of our roofing experts will visit your property, assess the condition of your roof, and provide a detailed written estimate — no pressure, no gimmicks, just honest advice.
+        </div></div></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══ ALL SERVICES GRID ══════════════════════════════════════ -->
+<section class="home-svcs-sec">
+  <div class="container">
+    <span class="eyebrow" style="text-align:center;display:block">What We Offer</span>
+    <h2 class="sec-h2 center">All The Comforts Of<br>A Good Roof</h2>
+    <div class="home-svcs-grid stagger-parent">
+      <a href="services/roof-replacement.html" class="home-svc-card stagger-child">
+        <img src="assets/roof-1.jpg" alt="Roof Replacement San Antonio">
+        <div class="home-svc-body">
+          <h3>Roof Replacement</h3>
+          <span class="home-svc-link">Learn More →</span>
+        </div>
+      </a>
+      <a href="services/roof-repair.html" class="home-svc-card stagger-child">
+        <img src="assets/roof-2.jpg" alt="Roof Repair San Antonio">
+        <div class="home-svc-body">
+          <h3>Roof Repair</h3>
+          <span class="home-svc-link">Learn More →</span>
+        </div>
+      </a>
+      <a href="services/roof-installation.html" class="home-svc-card stagger-child">
+        <img src="assets/roof-3.jpg" alt="Roof Installation San Antonio">
+        <div class="home-svc-body">
+          <h3>Roof Installation</h3>
+          <span class="home-svc-link">Learn More →</span>
+        </div>
+      </a>
+      <a href="services/roof-maintenance.html" class="home-svc-card stagger-child">
+        <img src="assets/roof-4.jpg" alt="Roof Maintenance San Antonio">
+        <div class="home-svc-body">
+          <h3>Roof Maintenance</h3>
+          <span class="home-svc-link">Learn More →</span>
+        </div>
+      </a>
+      <a href="services/roof-inspection.html" class="home-svc-card stagger-child">
+        <img src="assets/roof-5.jpg" alt="Roof Inspection San Antonio">
+        <div class="home-svc-body">
+          <h3>Roof Inspection</h3>
+          <span class="home-svc-link">Learn More →</span>
+        </div>
+      </a>
+      <a href="services/siding.html" class="home-svc-card stagger-child">
+        <img src="assets/roof-6.jpg" alt="Siding San Antonio">
+        <div class="home-svc-body">
+          <h3>Siding</h3>
+          <span class="home-svc-link">Learn More →</span>
+        </div>
+      </a>
+      <a href="services/painting.html" class="home-svc-card stagger-child">
+        <img src="assets/roof-7.jpg" alt="Exterior Painting San Antonio">
+        <div class="home-svc-body">
+          <h3>Exterior Painting</h3>
+          <span class="home-svc-link">Learn More →</span>
+        </div>
+      </a>
+      <a href="services/gutters-downspouts.html" class="home-svc-card stagger-child">
+        <img src="assets/roof-8.jpg" alt="Gutters San Antonio">
+        <div class="home-svc-body">
+          <h3>Gutters &amp; Downspouts</h3>
+          <span class="home-svc-link">Learn More →</span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ══ COMFORTS SECTION ══════════════════════════════════════ -->
+<section class="comforts-sec">
+  <div class="container">
+    <p class="comforts-hed">All The Comforts Of Home<br>Start With A <span>Word Of Mouth</span> Roof</p>
+    <div class="comforts-grid">
+      <div class="comfort-card" data-reveal>
+        <div class="comfort-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" width="32" height="32"><path fill="currentColor" d="M12 20.4502c1.76665 -0.58335 3.22915 -1.65415 4.3875 -3.2125s1.8375 -3.30415 2.0375 -5.2375H12V3.625195L5.5 6.0502v4.9c0 0.2 0.00415 0.37085 0.0125 0.5125 0.00835 0.14165 0.02915 0.32085 0.0625 0.5375H12v8.45Zm0 1.45c-0.08335 0 -0.1625 -0.00835 -0.2375 -0.025 -0.075 -0.01665 -0.15415 -0.04165 -0.2375 -0.075 -2.31665 -0.78335 -4.15 -2.1875 -5.5 -4.2125 -1.35 -2.025 -2.025 -4.24585 -2.025 -6.6625v-4.9c0 -0.31665 0.091665 -0.60415 0.275 -0.8625 0.183335 -0.25834 0.416665 -0.44584 0.7 -0.562505l6.5 -2.425c0.18335 -0.066665 0.35835 -0.1 0.525 -0.1 0.16665 0 0.34165 0.033335 0.525 0.1l6.5 2.425c0.28335 0.116665 0.51665 0.304165 0.7 0.562505 0.18335 0.25835 0.275 0.54585 0.275 0.8625v4.9c0 2.41665 -0.675 4.6375 -2.025 6.6625 -1.35 2.025 -3.18335 3.42915 -5.5 4.2125 -0.08335 0.03335 -0.1625 0.05835 -0.2375 0.075 -0.075 0.01665 -0.15415 0.025 -0.2375 0.025Z" stroke-width="0.5"/></svg>
+        </div>
+        <h3>Certified Roofing<br>Contractors</h3>
+      </div>
+      <div class="comfort-card" data-reveal data-delay="1">
+        <div class="comfort-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" width="32" height="32"><path fill="currentColor" d="M5.3 17.2252v-6.975c0 -0.2125 0.07235 -0.39065 0.217 -0.5345 0.1445 -0.14365 0.32365 -0.2155 0.5375 -0.2155 0.21365 0 0.39135 0.07185 0.533 0.2155 0.14165 0.14385 0.2125 0.322 0.2125 0.5345v6.975c0 0.2125 -0.07235 0.3906 -0.217 0.53425 -0.1445 0.14385 -0.32365 0.21575 -0.5375 0.21575 -0.21365 0 -0.39135 -0.0719 -0.533 -0.21575 -0.14165 -0.14365 -0.2125 -0.32175 -0.2125 -0.53425Zm6.05 0v-6.975c0 -0.2125 0.07235 -0.39065 0.217 -0.5345 0.1445 -0.14365 0.32365 -0.2155 0.5375 -0.2155 0.21365 0 0.39135 0.07185 0.533 0.2155 0.14165 0.14385 0.2125 0.322 0.2125 0.5345v6.975c0 0.2125 -0.07235 0.3906 -0.217 0.53425 -0.1445 0.14385 -0.32365 0.21575 -0.5375 0.21575 -0.21365 0 -0.39135 -0.0719 -0.533 -0.21575 -0.14165 -0.14365 -0.2125 -0.32175 -0.2125 -0.53425Zm10 -9.225H2.575c-0.159665 0 -0.295415 -0.0559 -0.40725 -0.16775C2.055915 7.7206 2 7.58485 2 7.4252v-0.425c0 -0.1 0.029165 -0.19585 0.0875 -0.2875 0.058335 -0.09165 0.129165 -0.1625 0.2125 -0.2125L11.25 1.400195c0.23615 -0.133335 0.48615 -0.2 0.75 -0.2s0.51385 0.066665 0.75 0.2L21.675 6.4752c0.1 0.06665 0.17915 0.15 0.2375 0.25 0.05835 0.1 0.0875 0.2125 0.0875 0.3375v0.25575c0 0.19315 -0.06225 0.3551 -0.18675 0.48575 -0.12465 0.13065 -0.2791 0.196 -0.46325 0.196Zm-18.6 12.975c-0.2125 0 -0.390585 -0.07235 -0.53425 -0.217 -0.143835 -0.1445 -0.21575 -0.32365 -0.21575 -0.5375 0 -0.21365 0.071915 -0.39135 0.21575 -0.533 0.143665 -0.14165 0.32175 -0.2125 0.53425 -0.2125h11c0.2125 0 0.39065 0.07235 0.5345 0.217 0.14365 0.1445 0.2155 0.32365 0.2155 0.5375 0 0.21365 -0.07185 0.39135 -0.2155 0.533 -0.14385 0.14165 -0.322 0.2125 -0.5345 0.2125h-11Zm15.1955 -7.65c-0.21365 0 -0.39135 -0.0719 -0.533 -0.21575 -0.14165 -0.14365 -0.2125 -0.32175 -0.2125 -0.53425v-2.325c0 -0.2125 0.07235 -0.39065 0.217 -0.5345 0.1445 -0.14365 0.32365 -0.2155 0.5375 -0.2155 0.21365 0 0.39135 0.07185 0.533 0.2155 0.14165 0.14385 0.2125 0.322 0.2125 0.5345v2.325c0 0.2125 -0.07235 0.3906 -0.217 0.53425 -0.1445 0.14385 -0.32365 0.21575 -0.5375 0.21575ZM16 18.5502v-2.075c0 -0.136 0.0375 -0.26585 0.1125 -0.3895 0.075 -0.12365 0.17915 -0.21885 0.3125 -0.2855l3.25 -1.625c0.09515 -0.05 0.20235 -0.075 0.3215 -0.075 0.119 0 0.2285 0.025 0.3285 0.075l3.25 1.625c0.13335 0.06665 0.2375 0.16185 0.3125 0.2855 0.075 0.12365 0.1125 0.2535 0.1125 0.3895v2.075c0 1.3 -0.32915 2.39165 -0.9875 3.275 -0.65835 0.88335 -1.5625 1.56665 -2.7125 2.05 -0.06665 0.03335 -0.16665 0.05 -0.3 0.05l-0.3 -0.05c-1.15 -0.48335 -2.05415 -1.16665 -2.7125 -2.05 -0.65835 -0.88335 -0.9875 -1.975 -0.9875 -3.275Zm3.475 1.05 -1.125 -1.125c-0.1 -0.1 -0.21665 -0.15 -0.35 -0.15 -0.13335 0 -0.25 0.05 -0.35 0.15 -0.1 0.1 -0.15 0.21665 -0.15 0.35 0 0.13335 0.05 0.25 0.15 0.35l1.3 1.3c0.15 0.15 0.325 0.225 0.525 0.225s0.375 -0.075 0.525 -0.225l2.675 -2.675c0.1 -0.1 0.15 -0.21665 0.15 -0.35 0 -0.13335 -0.05 -0.25 -0.15 -0.35 -0.1 -0.1 -0.21665 -0.15 -0.35 -0.15 -0.13335 0 -0.25 0.05 -0.35 0.15l-2.5 2.5Z" stroke-width="0.5"/></svg>
+        </div>
+        <h3>Flexible Financing<br>Options</h3>
+      </div>
+      <div class="comfort-card" data-reveal data-delay="2">
+        <div class="comfort-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" width="32" height="32"><path fill="currentColor" d="m10.9246 13.17495 -1.825 -1.9c-0.15 -0.16665 -0.3333 -0.25 -0.55 -0.25 -0.21665 0 -0.4083 0.075 -0.575 0.225 -0.16665 0.16665 -0.25 0.35835 -0.25 0.575 0 0.21665 0.08335 0.40835 0.25 0.575l2.425 2.4c0.15 0.15 0.325 0.225 0.525 0.225s0.375 -0.075 0.525 -0.225l4.575 -4.55c0.15 -0.15 0.225 -0.33335 0.225 -0.55 0 -0.21665 -0.0833 -0.4 -0.25 -0.55 -0.15 -0.13335 -0.32915 -0.19585 -0.5375 -0.1875 -0.2083 0.00835 -0.37915 0.07915 -0.5125 0.2125l-4.025 4Zm-2.625 8.725 -1.55 -2.65 -3.09999 -0.625c-0.183335 -0.03335 -0.3375 -0.13335 -0.4625 -0.3s-0.170835 -0.34165 -0.1375 -0.525l0.35 -3 -1.975 -2.3c-0.133335 -0.13335 -0.2 -0.3 -0.2 -0.5s0.066665 -0.36665 0.2 -0.5l1.975 -2.275 -0.35 -3c-0.033335 -0.18335 0.0125 -0.35835 0.1375 -0.525 0.125 -0.16665 0.279165 -0.26665 0.4625 -0.3l3.09999 -0.625005 1.55 -2.675c0.1 -0.166665 0.2417 -0.283335 0.425 -0.35 0.18335 -0.066665 0.3667 -0.058335 0.55 0.025l2.725 1.275 2.725 -1.275c0.18335 -0.083335 0.3667 -0.095835 0.55 -0.0375 0.18335 0.058335 0.325 0.170835 0.425 0.3375l1.575 2.7 3.075 0.625005c0.18335 0.03335 0.3375 0.13335 0.4625 0.3s0.17085 0.34165 0.1375 0.525l-0.35 3 1.975 2.275c0.13335 0.13335 0.2 0.3 0.2 0.5s-0.06665 0.36665 -0.2 0.5l-1.975 2.3 0.35 3c0.03335 0.18335 -0.0125 0.35835 -0.1375 0.525 -0.125 0.16665 -0.27915 0.26665 -0.4625 0.3l-3.075 0.625 -1.575 2.675c-0.1 0.16665 -0.24165 0.27915 -0.425 0.3375 -0.1833 0.05835 -0.36665 0.04585 -0.55 -0.0375l-2.725 -1.275 -2.725 1.275c-0.1833 0.08335 -0.36665 0.09165 -0.55 0.025 -0.1833 -0.06665 -0.325 -0.18335 -0.425 -0.35Z" stroke-width="0.5"/></svg>
+        </div>
+        <h3>Lifetime Workmanship<br>Warranty</h3>
+      </div>
+      <div class="comfort-card" data-reveal data-delay="3">
+        <div class="comfort-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" width="32" height="32"><path fill="currentColor" d="M11.75 21c-0.2125 0 -0.3906 -0.07235 -0.53425 -0.217 -0.14385 -0.1445 -0.21575 -0.32365 -0.21575 -0.5375 0 -0.21365 0.0719 -0.39135 0.21575 -0.533 0.14365 -0.14165 0.32175 -0.2125 0.53425 -0.2125H19.5V11.9c0 -2.0615 -0.72765 -3.81015 -2.183 -5.246C15.86165 5.218 14.08935 4.5 12 4.5s-3.86165 0.718 -5.317 2.154C5.22765 8.08985 4.5 9.8385 4.5 11.9V17.5c0 0.14165 -0.047915 0.2604 -0.14375 0.35625C4.260415 17.9521 4.141665 18 4 18c-0.55 0 -1.020835 -0.19585 -1.4125 -0.5875C2.195835 17.02085 2 16.55 2 16v-2c0 -0.35 0.0875 -0.67915 0.2625 -0.9875 0.175 -0.30835 0.420835 -0.55415 0.7375 -0.7375l0.075 -1.325c0.133335 -1.13335 0.4625 -2.18335 0.9875 -3.15s1.18335 -1.80835 1.975 -2.525c0.79165 -0.716665 1.7 -1.275 2.725 -1.675C9.7875 3.2 10.86665 3 12 3c1.13335 0 2.20835 0.2 3.225 0.6 1.01665 0.4 1.925 0.954165 2.725 1.6625 0.8 0.70835 1.45835 1.54585 1.975 2.5125 0.51665 0.96665 0.85 2.01665 1 3.15l0.075 1.3c0.31665 0.15 0.5625 0.375 0.7375 0.675 0.175 0.3 0.2625 0.61665 0.2625 0.95v2.3c0 0.33335 -0.0875 0.65 -0.2625 0.95 -0.175 0.3 -0.42085 0.525 -0.7375 0.675V19.5c0 0.4125 -0.14685 0.7656 -0.4405 1.05925C20.26565 20.8531 19.9125 21 19.5 21H11.75Zm-2.7545 -7.25c-0.21365 0 -0.39135 -0.07235 -0.533 -0.217 -0.14165 -0.1445 -0.2125 -0.32365 -0.2125 -0.5375 0 -0.21365 0.07235 -0.39135 0.217 -0.533 0.1445 -0.14165 0.32365 -0.2125 0.5375 -0.2125 0.21365 0 0.39135 0.07235 0.533 0.217 0.14165 0.1445 0.2125 0.32365 0.2125 0.5375 0 0.21365 -0.07235 0.39135 -0.217 0.533 -0.1445 0.14165 -0.32365 0.2125 -0.5375 0.2125Zm6 0c-0.21365 0 -0.39135 -0.07235 -0.533 -0.217 -0.14165 -0.1445 -0.2125 -0.32365 -0.2125 -0.5375 0 -0.21365 0.07235 -0.39135 0.217 -0.533 0.1445 -0.14165 0.32365 -0.2125 0.5375 -0.2125 0.21365 0 0.39135 0.07235 0.533 0.217 0.14165 0.1445 0.2125 0.32365 0.2125 0.5375 0 0.21365 -0.07235 0.39135 -0.217 0.533 -0.1445 0.14165 -0.32365 0.2125 -0.5375 0.2125ZM6.025 12.45c-0.11665 -1.76665 0.41665 -3.28335 1.6 -4.55 1.18335 -1.26665 2.65835 -1.9 4.425 -1.9 1.45 0 2.70835 0.47915 3.775 1.4375s1.71665 2.15415 1.95 3.5875c-1.48335 -0.01665 -2.8375 -0.43335 -4.0625 -1.25s-2.17315 -1.89165 -2.8445 -3.225c-0.262 1.33335 -0.82215 2.52085 -1.6805 3.5625 -0.85835 1.04165 -1.9125 1.82085 -3.1625 2.3375Z" stroke-width="0.5"/></svg>
+        </div>
+        <h3>24/7 Claims<br>Assistance</h3>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ ROOFLINE DIVIDER ──────────────────────────────────── -->
+<div class="roofline-divider" aria-hidden="true">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 54" preserveAspectRatio="none">
+    <polyline points="0,54 180,8 360,40 540,6 720,36 900,6 1080,36 1260,8 1440,54" fill="none" stroke="rgba(204,0,0,.55)" stroke-width="2.5" stroke-linejoin="round"/>
+    <polyline points="0,54 180,8 360,40 540,6 720,36 900,6 1080,36 1260,8 1440,54" fill="none" stroke="rgba(201,168,112,.3)" stroke-width="1" stroke-linejoin="round" stroke-dasharray="6 6"/>
+  </svg>
+</div>
+
+<!-- ══ OFFERS / SPECIALS SECTION ════════════════════════════ -->
+<section class="offers-sec">
+  <div class="container">
+    <span class="eyebrow" style="text-align:center;display:block">Current Promotions</span>
+    <h2 class="sec-h2 center">Take Advantage Of These<br>Great Offers From Word Of Mouth Roofing</h2>
+    <p class="offers-sub" style="text-align:center;margin:0 auto 48px;max-width:600px">Limited-time offers for homeowners in San Antonio and surrounding areas. Contact us today before these deals expire.</p>
+    <div class="offers-grid stagger-parent">
+      <a href="contact.html" class="offer-card stagger-child">
+        <img src="assets/roof-1.jpg" alt="Free Estimates and Inspections">
+        <div class="offer-body">
+          <span class="offer-tag">Always Free</span>
+          <h3>Free Estimates &amp; Inspections</h3>
+          <p>Get a thorough, no-obligation roof inspection from a certified Word of Mouth Roofing expert — at absolutely no cost to you.</p>
+          <span class="offer-link">Claim Offer →</span>
+        </div>
+      </a>
+      <a href="specials.html" class="offer-card stagger-child">
+        <img src="assets/roof-5.jpg" alt="10% Off Premium Shingle Upgrade">
+        <div class="offer-body">
+          <span class="offer-tag">Limited Time</span>
+          <h3>10% OFF Full Premium Roof Shingle Upgrade</h3>
+          <p>Upgrade your entire roof to our premium shingle line and save 10% on the full project — the biggest investment you can make in your home's protection and curb appeal.</p>
+          <span class="offer-link">Claim Offer →</span>
+        </div>
+      </a>
+      <a href="specials.html" class="offer-card stagger-child">
+        <img src="assets/roof-8.jpg" alt="Free Exterior Repaint">
+        <div class="offer-body">
+          <span class="offer-tag">Exclusive Bundle</span>
+          <h3>FREE Exterior Repaint With Any Full Roof Replacement</h3>
+          <p>Book a full roof replacement and receive a complete exterior repaint of your home — absolutely free. A combined value of thousands of dollars.</p>
+          <span class="offer-link">Claim Offer →</span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ══ PROJECT GALLERY ════════════════════════════════════════ -->
+<section class="gallery-sec">
+  <div class="container">
+    <span class="eyebrow" style="display:block;text-align:center">Our Work</span>
+    <h2 class="sec-h2 center">Real Projects.<br>Real San Antonio Homeowners.</h2>
+    <p class="gallery-sub">Every photo below is an actual Word of Mouth Roofing job — no stock images, no models. Just local families who trusted us with their most important investment.</p>
+    <div class="gallery-grid">
+      <div class="gallery-item gallery-item--tall">
+        <img src="assets/roof-3.jpg" alt="Roof replacement project - San Antonio" loading="lazy">
+        <div class="gallery-overlay"><span>Full Roof Replacement</span></div>
+      </div>
+      <div class="gallery-item">
+        <img src="assets/roof-1.jpg" alt="New roof installation" loading="lazy">
+        <div class="gallery-overlay"><span>Premium Shingle Install</span></div>
+      </div>
+      <div class="gallery-item">
+        <img src="assets/roof-4.jpg" alt="Roof repair completed" loading="lazy">
+        <div class="gallery-overlay"><span>Storm Damage Repair</span></div>
+      </div>
+      <div class="gallery-item">
+        <img src="assets/roof-5.jpg" alt="Shingle upgrade" loading="lazy">
+        <div class="gallery-overlay"><span>Shingle Upgrade</span></div>
+      </div>
+      <div class="gallery-item gallery-item--tall">
+        <img src="assets/roof-9.jpg" alt="Complete roof installation" loading="lazy">
+        <div class="gallery-overlay"><span>Full Replacement</span></div>
+      </div>
+      <div class="gallery-item gallery-item--wide">
+        <img src="assets/roof-7.jpg" alt="Roof replacement" loading="lazy">
+        <div class="gallery-overlay"><span>Premium Roof System</span></div>
+      </div>
+      <div class="gallery-item">
+        <img src="assets/roof-2.jpg" alt="Roof project" loading="lazy">
+        <div class="gallery-overlay"><span>Quality Craftsmanship</span></div>
+      </div>
+      <div class="gallery-item">
+        <img src="assets/roof-6.jpg" alt="Roof work" loading="lazy">
+        <div class="gallery-overlay"><span>Storm Repair</span></div>
+      </div>
+      <div class="gallery-item">
+        <img src="assets/roof-8.jpg" alt="Roof installation" loading="lazy">
+        <div class="gallery-overlay"><span>New Installation</span></div>
+      </div>
+    </div>
+    <div class="gallery-cta">
+      <a href="contact.html" class="btn btn-red">Get A Free Estimate On Your Roof</a>
+    </div>
+  </div>
+</section>
+
+<!-- ══ STATS BAR ═════════════════════════════════════════════ -->
+<section class="stats-bar">
+  <div class="container">
+    <span class="stats-eyebrow">Our Track Record</span>
+    <p class="stats-hed">Proud To Serve Our Local Communities</p>
+    <div class="stats-nums">
+      <div class="stat-item" data-reveal>
+        <span class="stat-num"><span class="count" data-target="2400">0</span><span class="stat-suffix">+</span></span>
+        <span class="stat-label">Homes Served</span>
+      </div>
+      <div class="stat-item" data-reveal data-delay="1">
+        <span class="stat-num"><span class="count" data-target="247">0</span><span class="stat-suffix">+</span></span>
+        <span class="stat-label">5-Star Reviews</span>
+        <div class="stat-stars">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ AWARDS & RECOGNITION ══════════════════════════════════ -->
+<section class="awards-sec">
+  <div class="container">
+    <p class="awards-hed">Awards &amp; Recognition</p>
+    <div class="awards-logos stagger-parent">
+      <div class="award-logo-item stagger-child">
+        <img src="Certified-Contractor.png" alt="GAF Certified Residential Roofing Contractor" class="award-badge-img">
+      </div>
+      <div class="award-logo-item stagger-child">
+        <strong style="color:var(--red)">OC</strong>
+        <span>Owens Corning<br>Platinum Preferred</span>
+      </div>
+      <div class="award-logo-item stagger-child">
+        <img src="Better-Business-Bureau-Symbol.png" alt="BBB Accredited Business" class="award-badge-img award-badge-img--wide">
+      </div>
+      <div class="award-logo-item stagger-child">
+        <strong style="font-size:16px">TEXAS</strong>
+        <span>Licensed &amp; Insured<br>Roofing Contractor</span>
+      </div>
+      <div class="award-logo-item stagger-child">
+        <img src="NRCA_logo-300x300-1-300x300.avif" alt="NRCA National Roofing Contractors Association" class="award-badge-img">
+        <span style="font-size:8px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--gray)">Member</span>
+        <span>National Roofing<br>Contractors Association</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ CONTACT SECTION ═══════════════════════════════════════ -->
+<section class="contact-sec">
+  <div class="container">
+    <div class="contact-inner">
+      <div>
+        <span class="eyebrow">Schedule Today</span>
+        <h2 class="sec-h2">Contact Word Of Mouth Roofing</h2>
+        <form class="contact-form" id="contactForm" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" name="fname" placeholder="First Name" required>
+            </div>
+            <div class="form-group">
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" name="lname" placeholder="Last Name" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" placeholder="(210) 555-0000" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="you@example.com" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="zip">ZIP Code</label>
+              <input type="text" id="zip" name="zip" placeholder="78201">
+            </div>
+            <div class="form-group">
+              <label for="service">Service Needed</label>
+              <select id="service" name="service">
+                <option value="">Select a Service</option>
+                <option>Roof Replacement</option>
+                <option>Roof Repair</option>
+                <option>Roof Installation</option>
+                <option>Roof Maintenance</option>
+                <option>Roof Inspection</option>
+                <option>Siding</option>
+                <option>Exterior Painting</option>
+                <option>Gutters &amp; Downspouts</option>
+                <option>Other</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Tell us about your project…"></textarea>
+          </div>
+          <button type="submit" class="btn btn-red form-submit">Get My Free Estimate</button>
+        </form>
+      </div>
+      <div class="contact-info-col" data-reveal>
+        <h3>Why Choose Word Of Mouth Roofing?</h3>
+        <p>We're not a national chain. We're your neighbors — San Antonio homeowners who understand what it means to protect the home you've worked hard for. Every project is managed personally by Denver or Johnny.</p>
+        <ul>
+          <li>40+ years of combined roofing experience</li>
+          <li>Licensed &amp; insured in Texas</li>
+          <li>GAF &amp; Owens Corning certified</li>
+          <li>A+ BBB accredited</li>
+          <li>$2,000 On-Time, On-Budget Guarantee</li>
+          <li>Lifetime workmanship warranty</li>
+          <li>Free estimates &amp; inspections</li>
+          <li>Insurance claim assistance</li>
+        </ul>
+        <h3>Contact Us Directly</h3>
+        <p>
+          <strong>Phone:</strong> <a href="tel:+12102060779">(210) 206-0779</a><br>
+          <strong>Email:</strong> <a href="mailto:info@wordofmouthroofing.com">info@wordofmouthroofing.com</a><br>
+          <strong>Hours:</strong> Mon–Fri 7am–7pm | Sat 8am–5pm
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ MAP / SERVICE AREAS ═══════════════════════════════════ -->
+<section class="map-sec">
+  <div class="container">
+    <div class="map-inner">
+      <div class="map-text" data-reveal>
+        <span class="eyebrow gold">Where We Work</span>
+        <h2>Serving Greater<br>San Antonio, TX</h2>
+        <p>Word of Mouth Roofing proudly serves homeowners across San Antonio and the surrounding communities. If you're in Bexar County or the surrounding area, we're your local roofing experts.</p>
+        <div class="map-areas">
+          <a href="locations.html" class="map-area-tag">San Antonio, TX</a>
+          <a href="locations.html" class="map-area-tag">New Braunfels, TX</a>
+          <a href="locations.html" class="map-area-tag">Schertz, TX</a>
+          <a href="locations.html" class="map-area-tag">Converse, TX</a>
+          <a href="locations.html" class="map-area-tag">Universal City, TX</a>
+          <a href="locations.html" class="map-area-tag">Live Oak, TX</a>
+          <a href="locations.html" class="map-area-tag">Selma, TX</a>
+          <a href="locations.html" class="map-area-tag">Boerne, TX</a>
+          <a href="locations.html" class="map-area-tag">Helotes, TX</a>
+          <a href="locations.html" class="map-area-tag">Seguin, TX</a>
+          <a href="locations.html" class="map-area-tag">Pleasanton, TX</a>
+          <a href="locations.html" class="map-area-tag">Kyle, TX</a>
+        </div>
+        <a href="locations.html" class="btn btn-outline-white">View All Locations</a>
+      </div>
+      <div class="map-visual" data-reveal>
+        <img src="assets/roof-9.jpg" alt="San Antonio TX service area map">
+        <div class="map-visual-overlay">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="rgba(207,190,156,.8)" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span>San Antonio, TX &amp; Surrounding Areas</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ RED CTA BANNER ════════════════════════════════════════ -->
+<section class="cta-banner">
+  <div class="container">
+    <div class="cta-banner-inner">
+      <div>
+        <h2>Don't Miss Out!</h2>
+        <p>Call today to schedule your free roof inspection and estimate. Our San Antonio roofing experts are standing by.</p>
+      </div>
+      <div class="cta-banner-btns">
+        <a href="tel:+12102060779" class="btn btn-white">(210) 206-0779</a>
+        <a href="contact.html" class="btn btn-outline-white">Get A Free Estimate</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ FOOTER ════════════════════════════════════════════════ -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="assets/logo-white.png" class="footer-logo" alt="Word of Mouth Roofing">
+        <p class="footer-tagline">Premium Roofing. Trusted Results. Family owned and locally operated in San Antonio, TX since 2023.</p>
+        <div class="footer-socials">
+          <a href="#" class="footer-soc" aria-label="Facebook">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+          </a>
+          <a href="#" class="footer-soc" aria-label="Instagram">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
+          </a>
+        </div>
+        <div class="footer-badges">
+          <img src="Certified-Contractor.png" alt="GAF Certified" class="footer-badge">
+          <img src="Better-Business-Bureau-Symbol.png" alt="BBB Accredited Business" class="footer-badge footer-badge--wide">
+          <img src="NRCA_logo-300x300-1-300x300.avif" alt="NRCA" class="footer-badge">
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="services/roof-replacement.html">Roof Replacement</a></li>
+          <li><a href="services/roof-installation.html">Roof Installation</a></li>
+          <li><a href="services/roof-repair.html">Roof Repair</a></li>
+          <li><a href="services/roof-maintenance.html">Roof Maintenance</a></li>
+          <li><a href="services/roof-inspection.html">Roof Inspection</a></li>
+          <li><a href="services/siding.html">Siding</a></li>
+          <li><a href="services/painting.html">Exterior Painting</a></li>
+          <li><a href="services/gutters-downspouts.html">Gutters &amp; Downspouts</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="specials.html">Specials</a></li>
+          <li><a href="locations.html">Locations</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Service Areas</h4>
+        <ul>
+          <li><a href="locations.html">San Antonio, TX</a></li>
+          <li><a href="locations.html">New Braunfels, TX</a></li>
+          <li><a href="locations.html">Schertz, TX</a></li>
+          <li><a href="locations.html">Converse, TX</a></li>
+          <li><a href="locations.html">Universal City, TX</a></li>
+          <li><a href="locations.html">Boerne, TX</a></li>
+          <li><a href="locations.html">Helotes, TX</a></li>
+          <li><a href="locations.html">Seguin, TX</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:+12102060779">(210) 206-0779</a></li>
+          <li><a href="mailto:info@wordofmouthroofing.com">info@wordofmouthroofing.com</a></li>
+          <li><a href="#">San Antonio, TX</a></li>
+        </ul>
+        <h4 style="margin-top:24px">Hours</h4>
+        <ul>
+          <li><a href="#">Mon–Fri: 7am – 7pm</a></li>
+          <li><a href="#">Saturday: 8am – 5pm</a></li>
+          <li><a href="#">Sunday: Closed</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">&copy; 2024 Word of Mouth Roofing. All rights reserved.</p>
+      <div class="footer-legal">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+        <a href="#">Sitemap</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

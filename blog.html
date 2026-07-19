@@ -1,0 +1,439 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Roofing Blog | Tips, Advice &amp; Resources | Word of Mouth Roofing San Antonio</title>
+<meta name="description" content="Read the latest roofing tips, maintenance advice, storm damage guides, and industry resources from Word of Mouth Roofing — San Antonio's trusted local roofing contractor.">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- ══ HEADER ══════════════════════════════════════════════ -->
+<header class="site-header" id="siteHeader">
+  <div class="top-bar">
+    <div class="container top-bar-inner">
+      <div class="tb-left">
+        <a href="tel:+12102060779" class="tb-phone">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+          (210) 206-0779
+        </a>
+        <div class="tb-divider"></div>
+        <a href="mailto:info@wordofmouthroofing.com" class="tb-email">info@wordofmouthroofing.com</a>
+      </div>
+      <div class="tb-right">
+        <div class="tb-socials">
+          <a href="#" class="tb-soc" aria-label="Facebook">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+          </a>
+          <a href="#" class="tb-soc" aria-label="Instagram">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
+          </a>
+        </div>
+        <a href="contact.html" class="tb-cta">Get A Free Estimate</a>
+      </div>
+    </div>
+  </div>
+  <nav class="main-nav">
+    <div class="container nav-inner">
+      <a href="index.html" class="nav-logo">
+        <img src="assets/logo-nav.png" alt="Word of Mouth Roofing">
+      </a>
+      <div class="nav-links">
+        <div class="nav-dd">
+          <span class="nav-link nav-dd-toggle">
+            Services
+            <svg class="chevron" width="11" height="7" viewBox="0 0 11 7" fill="none"><path d="M1 1l4.5 4.5L10 1" stroke="currentColor" stroke-width="1.8"/></svg>
+          </span>
+          <div class="nav-dd-menu">
+            <a href="services/roof-replacement.html">Roof Replacement</a>
+            <a href="services/roof-installation.html">Roof Installation</a>
+            <a href="services/roof-repair.html">Roof Repair</a>
+            <a href="services/roof-maintenance.html">Roof Maintenance</a>
+            <a href="services/roof-inspection.html">Roof Inspection</a>
+            <a href="services/siding.html">Siding</a>
+            <a href="services/painting.html">Exterior Painting</a>
+            <a href="services/gutters-downspouts.html">Gutters &amp; Downspouts</a>
+          </div>
+        </div>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="blog.html" class="nav-link active">Blog</a>
+        <a href="specials.html" class="nav-link">Specials</a>
+        <a href="locations.html" class="nav-link">Locations</a>
+        <a href="contact.html" class="nav-link nav-cta-btn">Get A Free Estimate</a>
+      </div>
+      <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav-progress" id="navProgress"></div>
+  </nav>
+</header>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+  <button class="mob-close" id="mobileClose" aria-label="Close menu">✕</button>
+  <img src="assets/logo-white.png" class="mob-logo" alt="Word of Mouth Roofing">
+  <a href="index.html" class="mob-link">Home</a>
+  <a href="#" class="mob-link" id="mobServicesToggle">Services <span>▾</span></a>
+  <div class="mob-sub" id="mobServicesSub">
+    <a href="services/roof-replacement.html">Roof Replacement</a>
+    <a href="services/roof-installation.html">Roof Installation</a>
+    <a href="services/roof-repair.html">Roof Repair</a>
+    <a href="services/roof-maintenance.html">Roof Maintenance</a>
+    <a href="services/roof-inspection.html">Roof Inspection</a>
+    <a href="services/siding.html">Siding</a>
+    <a href="services/painting.html">Exterior Painting</a>
+    <a href="services/gutters-downspouts.html">Gutters &amp; Downspouts</a>
+  </div>
+  <a href="about.html" class="mob-link">About</a>
+  <a href="blog.html" class="mob-link">Blog</a>
+  <a href="specials.html" class="mob-link">Specials</a>
+  <a href="locations.html" class="mob-link">Locations</a>
+  <div class="mob-cta-wrap">
+    <a href="contact.html" class="mob-cta">Get A Free Estimate</a>
+  </div>
+</div>
+
+<!-- ══ BLOG HERO ══════════════════════════════════════════════ -->
+<section class="blog-page-hero" style="background-image:url('assets/roof-4.jpg')">
+  <div class="container">
+    <h1>BLOG</h1>
+  </div>
+</section>
+
+<!-- ══ BLOG POSTS GRID ════════════════════════════════════════ -->
+<section class="blog-sec" style="padding:80px 0;background:var(--white,#fff)">
+  <div class="container">
+    <span class="eyebrow" style="text-align:center;display:block">Roofing Tips &amp; Resources</span>
+    <h2 class="sec-h2 center">Latest From Word Of Mouth Roofing</h2>
+    <div class="blog-grid">
+
+      <!-- Card 1 -->
+      <article class="blog-card" data-reveal>
+        <div class="blog-thumb">
+          <img src="assets/roof-1.jpg" alt="6-Month Roof Checklist San Antonio">
+        </div>
+        <div class="blog-card-body">
+          <span class="blog-cat">Maintenance</span>
+          <h3><a href="#" style="color:inherit;text-decoration:none">Tackling Roofing: Your Essential 6-Month Roof Checklist</a></h3>
+          <p>Staying ahead of roofing problems saves San Antonio homeowners thousands of dollars. Follow our expert 6-month checklist to inspect flashing, gutters, shingles, and attic ventilation before small issues become costly repairs.</p>
+          <a href="#" class="blog-read">Read More →</a>
+        </div>
+      </article>
+
+      <!-- Card 2 -->
+      <article class="blog-card" data-reveal data-delay="1">
+        <div class="blog-thumb">
+          <img src="assets/roof-2.jpg" alt="Frozen Gutters Winter Ice Storm San Antonio">
+        </div>
+        <div class="blog-card-body">
+          <span class="blog-cat">Gutters</span>
+          <h3><a href="#" style="color:inherit;text-decoration:none">What To Do If Your Gutters Freeze This Winter</a></h3>
+          <p>San Antonio's occasional winter ice storms can wreak havoc on your gutters and roof edge. Learn how to safely handle frozen gutters, prevent ice dams, and protect your home from water intrusion before the next freeze hits.</p>
+          <a href="#" class="blog-read">Read More →</a>
+        </div>
+      </article>
+
+      <!-- Card 3 -->
+      <article class="blog-card" data-reveal data-delay="2">
+        <div class="blog-thumb">
+          <img src="assets/roof-3.jpg" alt="Ice and Water Shield Roofing Installation">
+        </div>
+        <div class="blog-card-body">
+          <span class="blog-cat">Installation</span>
+          <h3><a href="#" style="color:inherit;text-decoration:none">The Importance of Ice and Water Shield Roofing</a></h3>
+          <p>Ice and water shield is one of the most critical underlayment components in any Texas roof installation. Discover why this self-adhering membrane is essential for protecting vulnerable areas like valleys, eaves, and penetrations from moisture damage.</p>
+          <a href="#" class="blog-read">Read More →</a>
+        </div>
+      </article>
+
+      <!-- Card 4 -->
+      <article class="blog-card" data-reveal>
+        <div class="blog-thumb">
+          <img src="assets/roof-4.jpg" alt="Owens Corning Platinum Preferred Contractor San Antonio">
+        </div>
+        <div class="blog-card-body">
+          <span class="blog-cat">Certifications</span>
+          <h3><a href="#" style="color:inherit;text-decoration:none">Reasons to Work With an Owens Corning Premium Preferred Contractor</a></h3>
+          <p>Not all roofing contractors are created equal. As an Owens Corning Platinum Preferred Contractor, Word of Mouth Roofing offers exclusive product warranties, certified installation standards, and the peace of mind that comes with manufacturer-backed craftsmanship.</p>
+          <a href="#" class="blog-read">Read More →</a>
+        </div>
+      </article>
+
+      <!-- Card 5 -->
+      <article class="blog-card" data-reveal data-delay="1">
+        <div class="blog-thumb">
+          <img src="assets/roof-5.jpg" alt="Roof Flashing Counter Flashing Tips">
+        </div>
+        <div class="blog-card-body">
+          <span class="blog-cat">Tips</span>
+          <h3><a href="#" style="color:inherit;text-decoration:none">Choosing Flashing Loads: New Flashing vs. Counter Flashing</a></h3>
+          <p>Flashing is your roof's first line of defense around chimneys, skylights, and walls. We break down the differences between step flashing, counter flashing, and base flashing — and explain when each is required for a watertight, code-compliant roof system.</p>
+          <a href="#" class="blog-read">Read More →</a>
+        </div>
+      </article>
+
+      <!-- Card 6 -->
+      <article class="blog-card" data-reveal data-delay="2">
+        <div class="blog-thumb">
+          <img src="assets/roof-6.jpg" alt="Hiring a Roofing Contractor San Antonio TX">
+        </div>
+        <div class="blog-card-body">
+          <span class="blog-cat">Advice</span>
+          <h3><a href="#" style="color:inherit;text-decoration:none">Tips for Hiring a Roofing Contractor in San Antonio</a></h3>
+          <p>After a storm, storm chasers flood San Antonio neighborhoods promising fast, cheap repairs. Learn what questions to ask, what red flags to avoid, and how to verify a contractor's license, insurance, and BBB standing before signing anything.</p>
+          <a href="#" class="blog-read">Read More →</a>
+        </div>
+      </article>
+
+      <!-- Card 7 -->
+      <article class="blog-card" data-reveal>
+        <div class="blog-thumb">
+          <img src="assets/roof-7.jpg" alt="Prepare Roof for Texas Summer Heat San Antonio">
+        </div>
+        <div class="blog-card-body">
+          <span class="blog-cat">Maintenance</span>
+          <h3><a href="#" style="color:inherit;text-decoration:none">How to Prepare Your Roof for a Texas Summer</a></h3>
+          <p>San Antonio summers push temperatures well past 100°F, and that heat takes a serious toll on roofing materials. From UV-reflective coatings to proper attic ventilation and shingle inspection, here's how to protect your roof before the hottest months arrive.</p>
+          <a href="#" class="blog-read">Read More →</a>
+        </div>
+      </article>
+
+      <!-- Card 8 -->
+      <article class="blog-card" data-reveal data-delay="1">
+        <div class="blog-thumb">
+          <img src="assets/roof-8.jpg" alt="Emergency Roof Repair After Hailstorm San Antonio">
+        </div>
+        <div class="blog-card-body">
+          <span class="blog-cat">Repair</span>
+          <h3><a href="#" style="color:inherit;text-decoration:none">Signs You Need Emergency Roof Repair After a Hailstorm</a></h3>
+          <p>Hailstorms in South Texas can cause devastating roof damage — much of it invisible from the ground. We cover the key warning signs of hail damage, what to document for your insurance claim, and why fast action is critical to preventing secondary water damage.</p>
+          <a href="#" class="blog-read">Read More →</a>
+        </div>
+      </article>
+
+      <!-- Card 9 -->
+      <article class="blog-card" data-reveal data-delay="2">
+        <div class="blog-thumb">
+          <img src="assets/roof-9.jpg" alt="GAF vs Owens Corning Shingles Comparison San Antonio">
+        </div>
+        <div class="blog-card-body">
+          <span class="blog-cat">Materials</span>
+          <h3><a href="#" style="color:inherit;text-decoration:none">GAF vs. Owens Corning: Which Shingles Are Right for You?</a></h3>
+          <p>GAF and Owens Corning are the two largest roofing manufacturers in North America — and both make outstanding products. We compare their top shingle lines on durability, warranty coverage, impact resistance, and value to help San Antonio homeowners make the right choice.</p>
+          <a href="#" class="blog-read">Read More →</a>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══ BROWSE BY CATEGORY ═════════════════════════════════════ -->
+<section class="blog-cats-sec">
+  <div class="container">
+    <p class="blog-cats-hed">Browse By Category</p>
+    <div class="blog-cat-pills">
+      <a href="#" class="cat-pill">Maintenance</a>
+      <a href="#" class="cat-pill">Installation</a>
+      <a href="#" class="cat-pill">Repair</a>
+      <a href="#" class="cat-pill">Inspection</a>
+      <a href="#" class="cat-pill">Tips &amp; Advice</a>
+      <a href="#" class="cat-pill">Insurance Claims</a>
+      <a href="#" class="cat-pill">Certifications</a>
+      <a href="#" class="cat-pill">San Antonio News</a>
+      <a href="#" class="cat-pill">Storm Damage</a>
+    </div>
+  </div>
+</section>
+
+<!-- ══ OFFERS / SPECIALS SECTION ════════════════════════════ -->
+<section class="offers-sec">
+  <div class="container">
+    <span class="eyebrow" style="text-align:center;display:block">Current Promotions</span>
+    <h2 class="sec-h2 center">Take Advantage Of These Great Offers From Word Of Mouth Roofing</h2>
+    <div class="offers-grid" style="margin-top:48px">
+      <a href="contact.html" class="offer-card">
+        <img src="assets/roof-1.jpg" alt="Free Estimates">
+        <div class="offer-body">
+          <span class="offer-tag">Always Free</span>
+          <h3>Free Estimates &amp; Inspections</h3>
+          <p>No-obligation roof inspection — absolutely free.</p>
+          <span class="offer-link">Claim Offer →</span>
+        </div>
+      </a>
+      <a href="specials.html" class="offer-card">
+        <img src="assets/roof-5.jpg" alt="10% Off">
+        <div class="offer-body">
+          <span class="offer-tag">Limited Time</span>
+          <h3>10% OFF Full Premium Roof Shingle Upgrade</h3>
+          <p>Upgrade to premium shingles and save 10% on the full project.</p>
+          <span class="offer-link">Claim Offer →</span>
+        </div>
+      </a>
+      <a href="specials.html" class="offer-card">
+        <img src="assets/roof-8.jpg" alt="Free Repaint">
+        <div class="offer-body">
+          <span class="offer-tag">Exclusive Bundle</span>
+          <h3>FREE Exterior Repaint With Any Full Roof Replacement</h3>
+          <p>Book a full replacement and receive a complete exterior repaint — free.</p>
+          <span class="offer-link">Claim Offer →</span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ══ STATS BAR ═════════════════════════════════════════════ -->
+<section class="stats-bar">
+  <div class="container">
+    <span class="stats-eyebrow">Our Track Record</span>
+    <p class="stats-hed">Proud To Serve Our Local Communities</p>
+    <div class="stats-nums">
+      <div class="stat-item" data-reveal>
+        <span class="stat-num"><span class="count" data-target="2400">0</span><span class="stat-suffix">+</span></span>
+        <span class="stat-label">Homes Served</span>
+      </div>
+      <div class="stat-item" data-reveal data-delay="1">
+        <span class="stat-num"><span class="count" data-target="247">0</span><span class="stat-suffix">+</span></span>
+        <span class="stat-label">5-Star Reviews</span>
+        <div class="stat-stars">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ AWARDS & RECOGNITION ══════════════════════════════════ -->
+<section class="awards-sec">
+  <div class="container">
+    <p class="awards-hed">Awards &amp; Recognition</p>
+    <div class="awards-logos">
+      <div class="award-logo-item">
+        <strong>GAF</strong>
+        <span>Certified<br>Contractor</span>
+      </div>
+      <div class="award-logo-item">
+        <strong style="color:var(--red)">OC</strong>
+        <span>Owens Corning<br>Platinum Preferred</span>
+      </div>
+      <div class="award-logo-item">
+        <strong style="color:#003087">BBB</strong>
+        <span>Accredited<br>A+ Rating</span>
+      </div>
+      <div class="award-logo-item">
+        <strong style="font-size:16px">TEXAS</strong>
+        <span>Licensed &amp; Insured<br>Roofing Contractor</span>
+      </div>
+      <div class="award-logo-item">
+        <strong style="font-size:16px">NRCA</strong>
+        <span>National Roofing<br>Contractors Association</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ RED CTA BANNER ════════════════════════════════════════ -->
+<section class="cta-banner">
+  <div class="container">
+    <div class="cta-banner-inner">
+      <div>
+        <h2>Don't Miss Out!</h2>
+        <p>Call today to schedule your free roof inspection and estimate. Our San Antonio roofing experts are standing by.</p>
+      </div>
+      <div class="cta-banner-btns">
+        <a href="tel:+12102060779" class="btn btn-white">(210) 206-0779</a>
+        <a href="contact.html" class="btn btn-outline-white">Get A Free Estimate</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ FOOTER ════════════════════════════════════════════════ -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="assets/logo-nav.png" class="footer-logo" alt="Word of Mouth Roofing">
+        <p class="footer-tagline">Premium Roofing. Trusted Results. Family owned and locally operated in San Antonio, TX since 2023.</p>
+        <div class="footer-socials">
+          <a href="#" class="footer-soc" aria-label="Facebook">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+          </a>
+          <a href="#" class="footer-soc" aria-label="Instagram">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="services/roof-replacement.html">Roof Replacement</a></li>
+          <li><a href="services/roof-installation.html">Roof Installation</a></li>
+          <li><a href="services/roof-repair.html">Roof Repair</a></li>
+          <li><a href="services/roof-maintenance.html">Roof Maintenance</a></li>
+          <li><a href="services/roof-inspection.html">Roof Inspection</a></li>
+          <li><a href="services/siding.html">Siding</a></li>
+          <li><a href="services/painting.html">Exterior Painting</a></li>
+          <li><a href="services/gutters-downspouts.html">Gutters &amp; Downspouts</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="specials.html">Specials</a></li>
+          <li><a href="locations.html">Locations</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Service Areas</h4>
+        <ul>
+          <li><a href="locations.html">San Antonio, TX</a></li>
+          <li><a href="locations.html">New Braunfels, TX</a></li>
+          <li><a href="locations.html">Schertz, TX</a></li>
+          <li><a href="locations.html">Converse, TX</a></li>
+          <li><a href="locations.html">Universal City, TX</a></li>
+          <li><a href="locations.html">Boerne, TX</a></li>
+          <li><a href="locations.html">Helotes, TX</a></li>
+          <li><a href="locations.html">Seguin, TX</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:+12102060779">(210) 206-0779</a></li>
+          <li><a href="mailto:info@wordofmouthroofing.com">info@wordofmouthroofing.com</a></li>
+          <li><a href="#">San Antonio, TX</a></li>
+        </ul>
+        <h4 style="margin-top:24px">Hours</h4>
+        <ul>
+          <li><a href="#">Mon–Fri: 7am – 7pm</a></li>
+          <li><a href="#">Saturday: 8am – 5pm</a></li>
+          <li><a href="#">Sunday: Closed</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">&copy; 2024 Word of Mouth Roofing. All rights reserved.</p>
+      <div class="footer-legal">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+        <a href="#">Sitemap</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
+

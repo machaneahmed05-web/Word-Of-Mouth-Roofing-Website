@@ -1,0 +1,16 @@
+# Reference/design files — not part of the deployed site
+bonedry.com_*.png
+heropagedesired.PNG
+herosecfuckedup.PNG
+font+badges.PNG
+cool design of logo.png
+cool_design_of_logo-removebg-preview.png
+ChatGPT Image*.png
+homepage logo.png
+Main Logo.png
+newlogo menu.png
+white logo.png
+homes video.mp4
+
+# Claude internal
+.claude/
